@@ -1,0 +1,21 @@
+<idea-plugin>
+  <id>com.calmnight.theme</id>
+  <name>Calm Night</name>
+  <version>1.0.0</version>
+  <vendor email="yo@epicdavid.com">David Domingo</vendor>
+  <description><![CDATA[
+    <b>Calm Night</b> — a low-eye-strain dark theme for long reading sessions.
+    Off-white text (#c5c8c6) on dark gray (#282c34), desaturated syntax accents,
+    a warm yellow caret, and a chrome that matches the same palette across the
+    IDE, its integrated terminal, Ghostty, and Neovim. Tuned to avoid halation
+    (pure-white bloom) and over-saturated colors that force the eye to refocus.
+  ]]></description>
+  <change-notes><![CDATA[1.0.0 — initial release: UI theme + editor/terminal color scheme.]]></change-notes>
+  <idea-version since-build="243"/>
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="calm-night-9f3a1c20-theme" path="/CalmNight.theme.json"/>
+    <bundledColorScheme id="Calm Night" path="/colorSchemes/CalmNight"/>
+    <bundledColorScheme id="Calm Night Minimal" path="/colorSchemes/CalmNightMinimal"/>
+  </extensions>
+</idea-plugin>

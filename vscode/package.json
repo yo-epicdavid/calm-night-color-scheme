@@ -1,0 +1,32 @@
+{
+	"name": "calmnight-theme",
+	"displayName": "Calm Night",
+	"description": "Low-eye-strain dark theme (full + 3-hue minimal) matched to Ghostty, JetBrains, and Neovim.",
+	"version": "1.0.0",
+	"publisher": "local",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Calm Night",
+				"uiTheme": "vs-dark",
+				"path": "./themes/calm-night-color-theme.json"
+			},
+			{
+				"label": "Calm Night Minimal",
+				"uiTheme": "vs-dark",
+				"path": "./themes/calm-night-minimal-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1785442683716,
+		"targetPlatform": "undefined",
+		"size": 21354
+	}
+}
