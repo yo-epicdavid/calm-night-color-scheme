@@ -1,0 +1,26 @@
+/* Calm Night — CSS sample. */
+:root {
+  --bg: #282c34;
+  --fg: #c5c8c6;
+  --accent: #f0c674;
+}
+
+.checkout-btn {
+  background: var(--accent);
+  color: #282c34;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.checkout-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checkout-btn {
+    transition: none;
+  }
+}

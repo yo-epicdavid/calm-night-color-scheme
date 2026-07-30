@@ -1,0 +1,13 @@
+{
+  "name": "calm-night",
+  "version": "1.0.0",
+  "variants": ["full", "minimal"],
+  "accent": "#f0c674",
+  "contrastRatio": 8.3,
+  "wcagAA": true,
+  "platforms": ["ghostty", "vscode", "jetbrains", "neovim", "vim"],
+  "money": {
+    "unit": "cents",
+    "float": false
+  }
+}
