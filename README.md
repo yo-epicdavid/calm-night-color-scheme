@@ -9,6 +9,36 @@ Two variants ship everywhere:
 
 A single warm-yellow accent (`#f0c674`) runs through the cursor and UI focus in every target, so your whole environment reads as one system.
 
+## Preview
+
+Same file, both variants side by side — the full palette on the left, the 3-hue **Minimal** on the right. In Minimal, keywords and functions settle to a calm off-white while strings (green), numbers/types (amber), and comments (gray) stay colored, so the yellow cursor is the one thing that pops.
+
+### WebStorm
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/calm-night-webstorm.png" alt="Calm Night full palette in WebStorm" width="100%"></td>
+    <td width="50%"><img src="screenshots/calm-night-minimal-webstorm.png" alt="Calm Night Minimal in WebStorm" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Calm Night</b></td>
+    <td align="center"><b>Calm Night Minimal</b></td>
+  </tr>
+</table>
+
+### VS Code
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/calm-night-vscode.png" alt="Calm Night full palette in VS Code" width="100%"></td>
+    <td width="50%"><img src="screenshots/calm-night-minimal-vscode.png" alt="Calm Night Minimal in VS Code" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Calm Night</b></td>
+    <td align="center"><b>Calm Night Minimal</b></td>
+  </tr>
+</table>
+
 > **Why this exists, with citations:** see **[docs/RESEARCH.md](docs/RESEARCH.md)**. The short version: don't max out contrast (halation), desaturate (chromatic aberration), and cap the number of simultaneous colors (cognitive load). The palette and both variants are built around those three findings.
 
 ## Supported platforms
