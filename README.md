@@ -29,9 +29,19 @@ A single warm-yellow accent (`#f0c674`) runs through the cursor and UI focus in 
 
 **JetBrains** — once published, install "Calm Night" from Settings → Plugins → Marketplace. To sideload: drop the built plugin jar into your IDE's config `plugins/` directory. Select it under Settings → Appearance → Theme, and the editor scheme under Editor → Color Scheme.
 
-**Neovim** (lazy.nvim) — point a plugin spec at this repo (`neovim/` is the runtime dir) or copy [`neovim/colors/`](neovim/colors) into your config, then `vim.cmd.colorscheme("calmnight_minimal")`.
+**Neovim** (lazy.nvim) — colorschemes live in [`colors/`](colors) at the repo root, so a plain spec works:
 
-**Vim** (vim-plug) — copy [`vim/colors/`](vim/colors) (and the lightline theme under `vim/autoload/`) into `~/.vim/`, then `colorscheme calmnight_minimal`.
+```lua
+{ "yo-epicdavid/calm-night-color-scheme", lazy = false, priority = 1000,
+  config = function() vim.cmd.colorscheme("calmnight_minimal") end }
+```
+
+**Vim** (vim-plug) — point Vim's runtimepath at the [`vim/`](vim) subdirectory:
+
+```vim
+Plug 'yo-epicdavid/calm-night-color-scheme', { 'rtp': 'vim' }
+" then, after plug#end():  colorscheme calmnight_minimal
+```
 
 Full per-platform notes live in each subdirectory.
 
